@@ -496,81 +496,55 @@ No revenue, conversion, traffic, or production analytics are claimed in this cas
 
 ---
 
-## Screenshots
+## Product Walkthrough
 
-Only the strongest screenshots are displayed in this README to keep the case study fast, clean, and professional.
+The screenshots below present the product as a real customer journey: landing on the platform, discovering yachts, viewing details, reviewing routes and extras, and submitting a booking enquiry across desktop and mobile.
 
-Additional screenshots can be stored inside the `screenshots/` folder.
+### 1. Premium Landing Experience
 
-### 1. Homepage Hero
+<img src="./screenshots/01-homepage-hero-desktop.png" alt="Book That Boat homepage hero" width="100%" />
 
-![Homepage Hero](./screenshots/01-homepage-hero-desktop.png)
-
-### 2. Yacht Listing & Filters
-
-![Yacht Listing & Filters](./screenshots/03-fleet-listing-desktop.png)
-
-### 3. Desktop Booking Enquiry Flow
-
-![Desktop Booking Flow](./screenshots/05-booking-modal-desktop.png)
-
-### 4. Yacht Detail Hero
-
-![Yacht Detail Hero](./screenshots/06-yacht-detail-hero-desktop.png)
-
-### 5. Route Options
-
-![Route Options](./screenshots/08-routes-section-desktop.png)
-
-### 6. Optional Extras
-
-![Optional Extras](./screenshots/09-extras-section-desktop.png)
-
-### 7. Mobile Yacht Detail
-
-![Mobile Yacht Detail](./screenshots/13-yacht-detail-mobile.png)
-
-### 8. Mobile Booking Flow
-
-![Mobile Booking Flow](./screenshots/14-booking-modal-mobile.png)
+**What this shows:** Premium first impression, brand positioning, yacht charter focus, and the primary customer call to action.
 
 ---
 
-## Screenshot Folder
+### 2. Fleet Discovery & Filtering
 
-Recommended screenshot structure:
+| Fleet Listing                                                                                   | Filter Experience                                                                   |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <img src="./screenshots/03-fleet-listing-desktop.png" alt="Yacht fleet listing" width="100%" /> | <img src="./screenshots/04-filters-desktop.png" alt="Fleet filters" width="100%" /> |
 
-```text
-screenshots/
-├── 01-homepage-hero-desktop.png
-├── 02-homepage-full-desktop.png
-├── 03-fleet-listing-desktop.png
-├── 04-filters-desktop.png
-├── 05-booking-modal-desktop.png
-├── 06-yacht-detail-hero-desktop.png
-├── 07-yacht-detail-full-desktop.png
-├── 08-routes-section-desktop.png
-├── 09-extras-section-desktop.png
-├── 10-homepage-mobile.png
-├── 11-fleet-listing-mobile.png
-├── 12-mobile-filter-sheet.png
-├── 13-yacht-detail-mobile.png
-└── 14-booking-modal-mobile.png
-```
+**What this shows:** A searchable yacht catalogue with filtering options for users comparing boats by price, capacity, event type, harbour, and boat type.
 
-Optional admin/CMS screenshots should only be added if they are fully redacted.
+---
 
-Do not upload:
+### 3. Yacht Detail Experience
 
-* Real customer data
-* Payment links
-* API responses
-* `.env` files
-* Admin credentials
-* Owner banking/contact details
-* Real reservations
-* Private CMS records
-* Production secrets
+| Desktop Detail Page                                                                                       | Mobile Detail Page                                                                                |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| <img src="./screenshots/06-yacht-detail-hero-desktop.png" alt="Yacht detail page desktop" width="100%" /> | <img src="./screenshots/13-yacht-detail-mobile.png" alt="Yacht detail page mobile" width="55%" /> |
+
+**What this shows:** Responsive yacht detail pages with premium visuals, yacht information, pricing context, and booking entry points across desktop and mobile.
+
+---
+
+### 4. Routes & Optional Extras
+
+| Route Options                                                                                    | Optional Extras                                                                                    |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| <img src="./screenshots/08-routes-section-desktop.png" alt="Yacht route options" width="100%" /> | <img src="./screenshots/09-extras-section-desktop.png" alt="Optional yacht extras" width="100%" /> |
+
+**What this shows:** CMS-driven route options and optional add-ons that support flexible yacht charter packages and richer booking customization.
+
+---
+
+### 5. Booking Enquiry Flow
+
+| Desktop Booking Flow                                                                                      | Mobile Booking Flow                                                                                    |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| <img src="./screenshots/05-booking-modal-desktop.png" alt="Desktop booking enquiry modal" width="100%" /> | <img src="./screenshots/14-booking-modal-mobile.png" alt="Mobile booking enquiry modal" width="55%" /> |
+
+**What this shows:** A multi-step booking enquiry experience with selected boat context, customer input, optional extras, pricing summary, and mobile responsiveness.
 
 ---
 
@@ -581,17 +555,12 @@ book-that-boat-case-study/
 ├── README.md
 ├── screenshots/
 │   ├── 01-homepage-hero-desktop.png
-│   ├── 02-homepage-full-desktop.png
 │   ├── 03-fleet-listing-desktop.png
 │   ├── 04-filters-desktop.png
 │   ├── 05-booking-modal-desktop.png
 │   ├── 06-yacht-detail-hero-desktop.png
-│   ├── 07-yacht-detail-full-desktop.png
 │   ├── 08-routes-section-desktop.png
 │   ├── 09-extras-section-desktop.png
-│   ├── 10-homepage-mobile.png
-│   ├── 11-fleet-listing-mobile.png
-│   ├── 12-mobile-filter-sheet.png
 │   ├── 13-yacht-detail-mobile.png
 │   └── 14-booking-modal-mobile.png
 ├── architecture/
@@ -661,9 +630,9 @@ Senior Frontend Engineer
 React.js | Next.js | TypeScript | React Native | Product UI | Frontend Architecture
 
 * Email: [muhammadshiraz996@gmail.com](mailto:muhammadshiraz996@gmail.com)
-* LinkedIn: https://www.linkedin.com/in/muhammadshiraz
-* GitHub: https://github.com/muhammadshiraz
-* Portfolio: https://muhammadshiraz.com
+* LinkedIn: [linkedin.com/in/muhammadshiraz](https://www.linkedin.com/in/muhammadshiraz)
+* GitHub: [github.com/muhammadshiraz](https://github.com/muhammadshiraz)
+* Portfolio: [muhammadshiraz.com](https://muhammadshiraz.com)
 
 ---
 
