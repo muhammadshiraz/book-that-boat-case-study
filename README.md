@@ -73,7 +73,7 @@ The screenshots below present the product as a real customer journey: landing on
 
 | Desktop Detail Page                                                                                       | Mobile Detail Page                                                                                |
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| <img src="./screenshots/06-yacht-detail-hero-desktop.png" alt="Yacht detail page desktop" width="100%" /> | <img src="./screenshots/13-yacht-detail-mobile.png" alt="Yacht detail page mobile" width="260" /> |
+| <img src="./screenshots/06-yacht-detail-hero-desktop.png" alt="Yacht detail page desktop" width="100%" /> | <img src="./screenshots/13-yacht-detail-mobile.png" alt="Yacht detail page mobile" width="450" /> |
 
 **What this shows:** Responsive yacht detail pages with premium visuals, yacht information, pricing context, and booking entry points across desktop and mobile.
 
@@ -93,7 +93,7 @@ The screenshots below present the product as a real customer journey: landing on
 
 | Desktop Booking Flow                                                                                      | Mobile Booking Flow                                                                                    |
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| <img src="./screenshots/05-booking-modal-desktop.png" alt="Desktop booking enquiry modal" width="100%" /> | <img src="./screenshots/14-booking-modal-mobile.png" alt="Mobile booking enquiry modal" width="260" /> |
+| <img src="./screenshots/05-booking-modal-desktop.png" alt="Desktop booking enquiry modal" width="100%" /> | <img src="./screenshots/14-booking-modal-mobile.png" alt="Mobile booking enquiry modal" width="450" /> |
 
 **What this shows:** A multi-step booking enquiry experience with selected boat context, customer input, optional extras, pricing summary, and mobile responsiveness.
 
