@@ -8,6 +8,16 @@ This case study demonstrates how a modern frontend system can connect yacht cata
 
 ---
 
+## Source Code & Review Scope
+
+The full production codebase for this project is private and is not included in this public repository.
+
+This repository contains a sanitized proof-of-work case study based on the local project implementation, verified feature review, architecture notes, public-safe screenshots, and selected safe code samples.
+
+The purpose of this repository is to demonstrate frontend architecture, CMS integration, booking flow design, performance decisions, and product engineering approach without exposing private production code or confidential business data.
+
+---
+
 ## Project Overview
 
 **Book That Boat** is a yacht and boat booking platform focused on premium charter experiences.
