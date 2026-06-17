@@ -1,45 +1,44 @@
 # Book That Boat — Premium Yacht Booking Platform Case Study
 
-A production-focused case study for a premium yacht and boat discovery and booking platform built with **Next.js, React, TypeScript, Payload CMS, Tailwind CSS, and API-driven frontend architecture**.
+A public proof-of-work case study for a premium yacht and boat discovery and booking platform built with **Next.js, React, TypeScript, Payload CMS, Tailwind CSS, and API-driven frontend architecture**.
 
-This case study demonstrates how a modern frontend experience can connect rich yacht catalogue content, dynamic booking rules, route options, extras, coupons, reservation workflows, responsive UI, and CMS-managed business content.
+This case study demonstrates how a modern frontend system can connect yacht catalogue content, route options, dynamic booking rules, optional extras, coupons, reservation workflows, responsive UI, SEO structure, and CMS-managed business operations.
 
-> Note: This repository is a public proof-of-work case study. It does not expose private source code, secrets, customer data, payment credentials, production analytics, or confidential business information.
+> This repository is a public case study. It does not expose private source code, secrets, customer data, payment credentials, production analytics, private API responses, or confidential business information.
 
 ---
 
 ## Project Overview
 
-**Book That Boat** is a premium yacht and boat booking platform focused on UAE charter experiences.
+**Book That Boat** is a yacht and boat booking platform focused on premium charter experiences.
 
-The platform combines:
+The platform includes:
 
-* A customer-facing **Next.js frontend** for browsing yachts, viewing details, filtering options, and submitting booking enquiries.
+* A customer-facing **Next.js frontend** for browsing yachts, viewing details, filtering fleet options, and submitting booking enquiries.
 * A separate **Payload CMS backend** for managing boats, locations, routes, extras, event categories, media, menus, reviews, coupons, reservations, owners, and subscribers.
-* A multi-step booking enquiry flow that connects yacht selection, availability details, dynamic pricing rules, optional extras, coupons, guest details, and reservation creation.
+* A multi-step booking enquiry flow that connects boat selection, date/time rules, guest count, dynamic pricing, optional extras, coupons, customer details, and reservation creation.
 
-The customer flow is enquiry-first: users submit a booking request, the operations team confirms availability, and payment details are handled after confirmation.
+The customer flow is enquiry-first: users submit a booking request, the operations team confirms availability, and payment details can be handled after confirmation.
 
 ---
 
 ## Business Problem
 
-Yacht booking is more complex than a simple product checkout.
+Yacht booking is more complex than a basic product checkout.
 
 A premium charter platform needs to support:
 
 * Searchable yacht and boat listings
-* Rich yacht detail pages with galleries, specifications, routes, amenities, and pricing
-* Dynamic pricing based on duration, sale prices, special-event packages, minimum-hour rules, and coupons
+* Rich yacht detail pages with galleries, specifications, amenities, routes, extras, and pricing
+* Dynamic pricing based on duration, sale prices, minimum-hour rules, special-event packages, and coupons
 * Optional extras such as catering, watersports, entertainment, and decor
 * Route and itinerary options with duration-based stops
 * Mobile-friendly booking actions
-* CMS-managed fleet and marketing content
-* Reservation workflows for operational follow-up
-* SEO-ready pages for discoverability
-* Scalable content structure as the yacht catalogue grows
+* CMS-managed fleet, content, media, menus, coupons, and reservation data
+* SEO-ready public pages
+* A scalable content structure as the yacht catalogue grows
 
-The goal was to create a polished customer journey while giving business users control over yacht content and booking operations through a CMS.
+The goal was to create a polished customer journey while giving business users control over catalogue and booking content through a CMS.
 
 ---
 
@@ -49,40 +48,39 @@ The goal was to create a polished customer journey while giving business users c
 
 My responsibilities included:
 
-* Frontend architecture for a responsive Next.js App Router application
-* Customer-facing yacht listing and detail page implementation
-* Reusable UI components for cards, filters, booking widgets, galleries, route sections, extras, loaders, and error states
-* Integration with Payload CMS REST data
-* Booking enquiry modal implementation
-* TypeScript interfaces and typed data handling
-* Dynamic pricing, route, extras, coupon, and reservation flow integration
-* Responsive mobile-first UI implementation
-* SEO and performance-focused frontend structure
-* Collaboration with a CMS/backend model supporting reservations, payment workflows, and operational booking data
+* Building a responsive **Next.js App Router** frontend
+* Translating Payload CMS data into customer-facing yacht listing and detail experiences
+* Creating reusable UI components for yacht cards, filters, galleries, booking widgets, routes, extras, loaders, and error states
+* Implementing a multi-step booking enquiry modal
+* Connecting booking selections to pricing, discount, coupon, special-event, minimum-duration, and extras logic
+* Defining TypeScript interfaces and safe data handling for CMS/API responses
+* Implementing client and server data-fetching patterns with React Query, SWR, Axios, and native fetch
+* Supporting SEO and performance through metadata, next/image, caching, revalidation, dynamic imports, progressive loading, and deferred extras loading
+* Building mobile-first responsive layouts with Tailwind CSS
+* Collaborating with CMS/backend workflows for reservations, payment follow-up, and booking operations
 
 ---
 
 ## Tech Stack
 
-| Area                | Technology                              |
-| ------------------- | --------------------------------------- |
-| Frontend Framework  | Next.js App Router                      |
-| UI Library          | React                                   |
-| Language            | TypeScript                              |
-| CMS                 | Payload CMS 3                           |
-| Database Layer      | MongoDB / Mongoose adapter              |
-| Styling             | Tailwind CSS                            |
-| Data Fetching       | React Query, SWR, Axios, Native Fetch   |
-| Images              | next/image                              |
-| UI Animation        | Framer Motion                           |
-| Forms / Feedback    | React Hook Form, React Hot Toast        |
-| Icons               | Lucide React, React Icons, Font Awesome |
-| Media Storage       | Vercel Blob                             |
-| Rich Text           | Lexical editor                          |
-| Email / Booking Ops | Nodemailer, Microsoft Graph integration |
-| Payments            | Mamo Pay integration                    |
-| Analytics           | Google Analytics, Google Tag Manager    |
-| Code Quality        | ESLint, Prettier                        |
+| Area                 | Technology                              |
+| -------------------- | --------------------------------------- |
+| Frontend Framework   | Next.js App Router                      |
+| UI Library           | React                                   |
+| Language             | TypeScript                              |
+| CMS                  | Payload CMS 3                           |
+| Database Layer       | MongoDB / Mongoose adapter              |
+| Styling              | Tailwind CSS                            |
+| Client Data Fetching | React Query, SWR, Axios                 |
+| Server Data Fetching | Native Fetch API                        |
+| Images               | next/image                              |
+| Animation            | Framer Motion                           |
+| Media Storage        | Vercel Blob                             |
+| Rich Text            | Lexical editor                          |
+| Forms / Feedback     | React Hook Form, React Hot Toast        |
+| Icons                | Lucide React, React Icons, Font Awesome |
+| Analytics            | Google Analytics, Google Tag Manager    |
+| Code Quality         | ESLint, Prettier                        |
 
 ---
 
@@ -134,11 +132,11 @@ BTG/
 
 ## Architecture Highlights
 
-* Separate frontend and CMS applications for better scalability and maintainability
+* Separate frontend and CMS applications for scalability and maintainability
 * Payload CMS used as a structured content and operations backend
 * Server-rendered yacht detail pages for SEO and performance
 * Client-side interactive experiences for filtering, booking, extras, and modals
-* Global booking modal context for shared booking actions across the app
+* Global booking modal context for shared booking actions across the application
 * Typed domain models for boats, routes, extras, coupons, and reservations
 * Centralized API helpers for consistent endpoint handling
 * Progressive loading and deferred content loading for better user experience
@@ -199,7 +197,7 @@ This avoids hardcoding catalogue and booking data into the frontend.
 
 * CMS-driven hero section
 * Optimized hero background image
-* CTA-driven customer journey
+* Clear customer call to action
 * Fleet listing integration
 * Progressive boat loading
 * Loading skeletons and error states
@@ -301,7 +299,7 @@ The pricing system supports:
 * Extras subtotal
 * Final enquiry total
 
-Pricing logic is separated from presentation so that UI components can display customer-friendly summaries without duplicating business rules.
+Pricing logic is separated from presentation so UI components can show customer-friendly summaries without duplicating business rules.
 
 ### Routes
 
@@ -334,7 +332,7 @@ Extras are loaded only when needed to improve performance.
 
 ## API & Data Fetching
 
-The frontend uses multiple data-fetching strategies depending on the use case:
+The frontend uses multiple data-fetching strategies depending on the use case.
 
 | Strategy     | Usage                                                                      |
 | ------------ | -------------------------------------------------------------------------- |
@@ -362,7 +360,7 @@ The UI includes:
 
 ## UI / UX Implementation
 
-The interface is designed for a premium service experience.
+The interface is designed for a premium booking experience.
 
 Key UX decisions:
 
@@ -381,7 +379,7 @@ Accessibility-related implementation includes:
 * Alt text on key images
 * Semantic headings and sections
 * Dialog roles and modal attributes
-* ARIA labels on interactive controls
+* ARIA labels on selected interactive controls
 * Keyboard Escape handling for selected panels
 * Focus utility classes on controls
 
@@ -459,28 +457,20 @@ Yacht booking journeys are highly visual and action-driven, so mobile navigation
 **Solution:**
 Modeled boats, locations, routes, extras, media, reviews, coupons, and events as structured Payload CMS collections with relationships. The frontend consumes these records through reusable components and typed models.
 
----
-
 ### Challenge 2: Dynamic pricing needed to stay understandable
 
 **Solution:**
 Separated pricing and discount logic from UI presentation. The booking interface evaluates sale pricing, discounts, minimum-duration rules, special-event rules, coupons, extras, and guest selections before showing a live summary.
-
----
 
 ### Challenge 3: One booking journey from multiple entry points
 
 **Solution:**
 Implemented a global booking context and shared booking modal. Users can start the booking flow from the header, homepage, yacht cards, detail widgets, and mobile CTA.
 
----
-
 ### Challenge 4: Extras required dependencies and passenger rules
 
 **Solution:**
 Loaded extras by selected boat, filtered them by passenger constraints and timing rules, resolved dependent extras recursively, and included selected items in the reservation payload.
-
----
 
 ### Challenge 5: Rich yacht pages needed good performance
 
@@ -508,72 +498,79 @@ No revenue, conversion, traffic, or production analytics are claimed in this cas
 
 ## Screenshots
 
-Add sanitized screenshots here.
+Only the strongest screenshots are displayed in this README to keep the case study fast, clean, and professional.
 
-### Homepage
+Additional screenshots can be stored inside the `screenshots/` folder.
 
-![Homepage](./screenshots/01-home-desktop.webp)
+### 1. Homepage Hero
 
-### Fleet Listing
+![Homepage Hero](./screenshots/01-homepage-hero-desktop.png)
 
-![Fleet Listing](./screenshots/02-fleet-desktop.webp)
+### 2. Yacht Listing & Filters
 
-### Mobile Filters
+![Yacht Listing & Filters](./screenshots/03-fleet-listing-desktop.png)
 
-![Mobile Filters](./screenshots/03-filters-mobile.webp)
+### 3. Desktop Booking Enquiry Flow
 
-### Yacht Detail Page
+![Desktop Booking Flow](./screenshots/05-booking-modal-desktop.png)
 
-![Yacht Detail](./screenshots/04-yacht-detail.webp)
+### 4. Yacht Detail Hero
 
-### Routes Section
+![Yacht Detail Hero](./screenshots/06-yacht-detail-hero-desktop.png)
 
-![Routes](./screenshots/05-routes.webp)
+### 5. Route Options
 
-### Extras Section
+![Route Options](./screenshots/08-routes-section-desktop.png)
 
-![Extras](./screenshots/06-extras.webp)
+### 6. Optional Extras
 
-### Booking Date & Time
+![Optional Extras](./screenshots/09-extras-section-desktop.png)
 
-![Booking Date Time](./screenshots/07-booking-date-time.webp)
+### 7. Mobile Yacht Detail
 
-### Booking Extras
+![Mobile Yacht Detail](./screenshots/13-yacht-detail-mobile.png)
 
-![Booking Extras](./screenshots/08-booking-extras.webp)
+### 8. Mobile Booking Flow
 
-### Booking Summary
-
-![Booking Summary](./screenshots/09-booking-summary.webp)
-
-### Payload CMS Models
-
-![Payload Models](./screenshots/10-payload-models.webp)
+![Mobile Booking Flow](./screenshots/14-booking-modal-mobile.png)
 
 ---
 
-## Recommended Screenshot Checklist
+## Screenshot Folder
 
-Before publishing, capture these screenshots with private data removed:
+Recommended screenshot structure:
 
-* Desktop homepage hero
-* Desktop fleet listing
-* Mobile fleet listing
-* Mobile filter sheet
-* Dynamic filter landing page
-* Yacht detail hero
-* Yacht gallery and specifications
-* Routes section
-* Extras section
-* Booking step 1: boat selection
-* Booking step 2: date/time and guests
-* Booking step 3: extras selection
-* Booking step 4: customer details using dummy data
-* Booking success state with identifiers hidden
-* Payload boats collection with private fields hidden
-* Payload routes editor
-* Payload extras editor
-* Demo reservation screen with all customer/payment/private data hidden
+```text
+screenshots/
+├── 01-homepage-hero-desktop.png
+├── 02-homepage-full-desktop.png
+├── 03-fleet-listing-desktop.png
+├── 04-filters-desktop.png
+├── 05-booking-modal-desktop.png
+├── 06-yacht-detail-hero-desktop.png
+├── 07-yacht-detail-full-desktop.png
+├── 08-routes-section-desktop.png
+├── 09-extras-section-desktop.png
+├── 10-homepage-mobile.png
+├── 11-fleet-listing-mobile.png
+├── 12-mobile-filter-sheet.png
+├── 13-yacht-detail-mobile.png
+└── 14-booking-modal-mobile.png
+```
+
+Optional admin/CMS screenshots should only be added if they are fully redacted.
+
+Do not upload:
+
+* Real customer data
+* Payment links
+* API responses
+* `.env` files
+* Admin credentials
+* Owner banking/contact details
+* Real reservations
+* Private CMS records
+* Production secrets
 
 ---
 
@@ -583,23 +580,24 @@ Before publishing, capture these screenshots with private data removed:
 book-that-boat-case-study/
 ├── README.md
 ├── screenshots/
-│   ├── 01-home-desktop.webp
-│   ├── 02-fleet-desktop.webp
-│   ├── 03-filters-mobile.webp
-│   ├── 04-yacht-detail.webp
-│   ├── 05-routes.webp
-│   ├── 06-extras.webp
-│   ├── 07-booking-date-time.webp
-│   ├── 08-booking-extras.webp
-│   ├── 09-booking-summary.webp
-│   └── 10-payload-models.webp
+│   ├── 01-homepage-hero-desktop.png
+│   ├── 02-homepage-full-desktop.png
+│   ├── 03-fleet-listing-desktop.png
+│   ├── 04-filters-desktop.png
+│   ├── 05-booking-modal-desktop.png
+│   ├── 06-yacht-detail-hero-desktop.png
+│   ├── 07-yacht-detail-full-desktop.png
+│   ├── 08-routes-section-desktop.png
+│   ├── 09-extras-section-desktop.png
+│   ├── 10-homepage-mobile.png
+│   ├── 11-fleet-listing-mobile.png
+│   ├── 12-mobile-filter-sheet.png
+│   ├── 13-yacht-detail-mobile.png
+│   └── 14-booking-modal-mobile.png
 ├── architecture/
 │   ├── system-overview.md
 │   ├── data-model.md
-│   ├── booking-flow.md
-│   └── diagrams/
-│       ├── frontend-cms-flow.svg
-│       └── booking-sequence.svg
+│   └── booking-flow.md
 ├── docs/
 │   ├── verified-tech-stack.md
 │   ├── frontend-features.md
@@ -618,7 +616,7 @@ book-that-boat-case-study/
 
 ## Safe Public Code Samples
 
-This public case study can include sanitized examples such as:
+This public case study may include sanitized examples such as:
 
 * Progressive boat loading hook
 * URL filter routing helper
@@ -630,7 +628,13 @@ This public case study can include sanitized examples such as:
 * Typed boat interface
 * API helper structure
 
-Do not publish:
+The purpose of these samples is to demonstrate engineering approach, architecture, and frontend decision-making without exposing private production code.
+
+---
+
+## Privacy & Redaction
+
+This repository must not include:
 
 * `.env` files
 * API keys
@@ -643,36 +647,10 @@ Do not publish:
 * Real coupon codes
 * Private production URLs
 * Admin credentials
+* Private CMS records
 * Sensitive email/payment integration code without redaction
 
----
-
-## Suggested Repository Topics
-
-```text
-nextjs
-react
-typescript
-payload-cms
-tailwindcss
-booking-platform
-cms
-frontend-architecture
-saas
-responsive-design
-seo
-react-query
-case-study
-proof-of-work
-```
-
----
-
-## Suggested Repository Description
-
-```text
-Premium yacht booking platform case study built with Next.js, TypeScript, Payload CMS, Tailwind CSS, dynamic booking flows, routes, extras, pricing logic, SEO, and responsive frontend architecture.
-```
+All screenshots and code samples should be reviewed before publishing.
 
 ---
 
