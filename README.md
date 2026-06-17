@@ -32,6 +32,73 @@ The customer flow is enquiry-first: users submit a booking request, the operatio
 
 ---
 
+## Case Study Highlights
+
+| Area           | Proof                                                                                                           |
+| -------------- | --------------------------------------------------------------------------------------------------------------- |
+| Product Type   | Premium yacht discovery and booking platform                                                                    |
+| Frontend       | Next.js App Router, React, TypeScript, Tailwind CSS                                                             |
+| CMS            | Payload CMS for boats, routes, extras, media, coupons, reviews, reservations, and business content              |
+| Booking Flow   | Multi-step enquiry modal with boat selection, date/time, guest count, extras, coupons, and reservation creation |
+| Business Logic | Dynamic pricing, minimum-hour rules, special-event packages, sale pricing, extras, and coupon validation        |
+| SEO            | Server-rendered yacht detail pages, dynamic metadata, sitemap, Open Graph, and semantic page structure          |
+| Performance    | next/image, caching, revalidation, lazy loading, dynamic imports, skeleton states, and deferred extras loading  |
+| Responsive UX  | Desktop and mobile yacht browsing, filtering, detail pages, and booking enquiry flow                            |
+
+---
+
+## Product Walkthrough
+
+The screenshots below present the product as a real customer journey: landing on the platform, discovering yachts, viewing details, reviewing routes and extras, and submitting a booking enquiry across desktop and mobile.
+
+### 1. Premium Landing Experience
+
+<img src="./screenshots/01-homepage-hero-desktop.png" alt="Book That Boat homepage hero" width="100%" />
+
+**What this shows:** Premium first impression, brand positioning, yacht charter focus, and the primary customer call to action.
+
+---
+
+### 2. Fleet Discovery & Filtering
+
+| Fleet Listing                                                                                   | Filter Experience                                                                   |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <img src="./screenshots/03-fleet-listing-desktop.png" alt="Yacht fleet listing" width="100%" /> | <img src="./screenshots/04-filters-desktop.png" alt="Fleet filters" width="100%" /> |
+
+**What this shows:** A searchable yacht catalogue with filtering options for users comparing boats by price, capacity, event type, harbour, and boat type.
+
+---
+
+### 3. Yacht Detail Experience
+
+| Desktop Detail Page                                                                                       | Mobile Detail Page                                                                                |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| <img src="./screenshots/06-yacht-detail-hero-desktop.png" alt="Yacht detail page desktop" width="100%" /> | <img src="./screenshots/13-yacht-detail-mobile.png" alt="Yacht detail page mobile" width="260" /> |
+
+**What this shows:** Responsive yacht detail pages with premium visuals, yacht information, pricing context, and booking entry points across desktop and mobile.
+
+---
+
+### 4. Routes & Optional Extras
+
+| Route Options                                                                                    | Optional Extras                                                                                    |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| <img src="./screenshots/08-routes-section-desktop.png" alt="Yacht route options" width="100%" /> | <img src="./screenshots/09-extras-section-desktop.png" alt="Optional yacht extras" width="100%" /> |
+
+**What this shows:** CMS-driven route options and optional add-ons that support flexible yacht charter packages and richer booking customization.
+
+---
+
+### 5. Booking Enquiry Flow
+
+| Desktop Booking Flow                                                                                      | Mobile Booking Flow                                                                                    |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| <img src="./screenshots/05-booking-modal-desktop.png" alt="Desktop booking enquiry modal" width="100%" /> | <img src="./screenshots/14-booking-modal-mobile.png" alt="Mobile booking enquiry modal" width="260" /> |
+
+**What this shows:** A multi-step booking enquiry experience with selected boat context, customer input, optional extras, pricing summary, and mobile responsiveness.
+
+---
+
 ## Business Problem
 
 Yacht booking is more complex than a basic product checkout.
@@ -506,58 +573,6 @@ No revenue, conversion, traffic, or production analytics are claimed in this cas
 
 ---
 
-## Product Walkthrough
-
-The screenshots below present the product as a real customer journey: landing on the platform, discovering yachts, viewing details, reviewing routes and extras, and submitting a booking enquiry across desktop and mobile.
-
-### 1. Premium Landing Experience
-
-<img src="./screenshots/01-homepage-hero-desktop.png" alt="Book That Boat homepage hero" width="100%" />
-
-**What this shows:** Premium first impression, brand positioning, yacht charter focus, and the primary customer call to action.
-
----
-
-### 2. Fleet Discovery & Filtering
-
-| Fleet Listing                                                                                   | Filter Experience                                                                   |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <img src="./screenshots/03-fleet-listing-desktop.png" alt="Yacht fleet listing" width="100%" /> | <img src="./screenshots/04-filters-desktop.png" alt="Fleet filters" width="100%" /> |
-
-**What this shows:** A searchable yacht catalogue with filtering options for users comparing boats by price, capacity, event type, harbour, and boat type.
-
----
-
-### 3. Yacht Detail Experience
-
-| Desktop Detail Page                                                                                       | Mobile Detail Page                                                                                |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| <img src="./screenshots/06-yacht-detail-hero-desktop.png" alt="Yacht detail page desktop" width="100%" /> | <img src="./screenshots/13-yacht-detail-mobile.png" alt="Yacht detail page mobile" width="55%" /> |
-
-**What this shows:** Responsive yacht detail pages with premium visuals, yacht information, pricing context, and booking entry points across desktop and mobile.
-
----
-
-### 4. Routes & Optional Extras
-
-| Route Options                                                                                    | Optional Extras                                                                                    |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| <img src="./screenshots/08-routes-section-desktop.png" alt="Yacht route options" width="100%" /> | <img src="./screenshots/09-extras-section-desktop.png" alt="Optional yacht extras" width="100%" /> |
-
-**What this shows:** CMS-driven route options and optional add-ons that support flexible yacht charter packages and richer booking customization.
-
----
-
-### 5. Booking Enquiry Flow
-
-| Desktop Booking Flow                                                                                      | Mobile Booking Flow                                                                                    |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| <img src="./screenshots/05-booking-modal-desktop.png" alt="Desktop booking enquiry modal" width="100%" /> | <img src="./screenshots/14-booking-modal-mobile.png" alt="Mobile booking enquiry modal" width="55%" /> |
-
-**What this shows:** A multi-step booking enquiry experience with selected boat context, customer input, optional extras, pricing summary, and mobile responsiveness.
-
----
-
 ## Public Repository Structure
 
 ```text
@@ -629,7 +644,7 @@ This repository must not include:
 * Private CMS records
 * Sensitive email/payment integration code without redaction
 
-All screenshots and code samples should be reviewed before publishing.
+All screenshots, documentation, and code samples should be reviewed before publishing to make sure no private production data, credentials, customer information, or confidential business details are exposed.
 
 ---
 
